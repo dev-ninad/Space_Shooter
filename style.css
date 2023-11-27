@@ -1,0 +1,83 @@
+#main-play-area {
+    width: 700px;
+    height: 500px;
+    background-image: url('images/space-main.jpg');
+  }
+  
+  #instructions-text {
+    position: relative;
+    color: white;
+    left: 190px;
+    top: 0px;
+    text-shadow: 2px 2px black;
+  }
+  
+  #start-button {
+    position: relative;
+    color: rgb(195, 57, 57);
+    left: 300px;
+    top: 80px;
+    text-shadow: 2px 2px rgb(109, 108, 108);
+  }
+  
+  #start-button:hover {
+    cursor: pointer;
+  }
+  
+  #player-controlled-shooter {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 20px;
+    top: 180px;
+    transition: top 0.3s ease;
+  }
+  
+  .laser {
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .monster {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    /* box-shadow:
+         0 0 6px 3px #fff,
+         0 0 5px 6px #f0f,
+         0 0 9px 9px #0ff;*/
+         box-shadow:
+    0 0 8px 4px rgba(255, 255, 255, 0.8),
+    0 0 10px 6px rgba(255, 0, 255, 0.8),
+    0 0 12px 8px rgba(0, 255, 255, 0.8);
+
+        transition: left 0.5s ease; /* Adjust the duration and easing as needed */
+  }
+
+  
+  
+  .monster-transition {
+    opacity: 1;
+    transition: opacity 2s ease-out;
+    /* transition: left 0.3s ease;*/
+  }
+  
+  
+  .dead-monster {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .star {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(227, 200, 200);
+    position: absolute;
+    border-radius: 50%;
+  }
+  
